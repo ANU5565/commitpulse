@@ -2,7 +2,7 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import { describe, it, expect, vi, beforeAll } from 'vitest';
 import ThemeSwitch from './theme-switch';
 
-// Mock window.matchMedia safely for the jsdom test runner
+
 beforeAll(() => {
   Object.defineProperty(window, 'matchMedia', {
     writable: true,
